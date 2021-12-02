@@ -24,6 +24,16 @@ ul {
 .accent {
   color: var(--text-title-color);
 }
+.nav-links {
+  display: flex;
+}
+.nav-links li {
+  margin-right: 50px;
+  outline: 1px solid red;
+}
+.nav-links li:last-child {
+  margin-right: 0;
+}
 .nav-links a {
   font-weight: 500;
   font-size: 14px;
