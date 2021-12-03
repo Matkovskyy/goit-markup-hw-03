@@ -9,10 +9,27 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
 ul {
   list-style: none;
 }
+
 /* header */
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid tomato;
+}
 .logo {
   font-family: Raleway;
   font-weight: 400;
@@ -26,10 +43,14 @@ ul {
 }
 .nav-links {
   display: flex;
+  padding: 0;
 }
 .nav-links li {
   margin-right: 50px;
   outline: 1px solid red;
+}
+.nav-links li:first-child {
+  margin-left: 93px;
 }
 .nav-links li:last-child {
   margin-right: 0;
@@ -45,6 +66,15 @@ ul {
 .nav-links a:hover,
 .nav-links a:focus {
   color: var(--accent-color);
+}
+
+.address {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+}
+.address .item + .item {
+  margin-left: 50px;
 }
 .address-mail {
   font-weight: 500;
