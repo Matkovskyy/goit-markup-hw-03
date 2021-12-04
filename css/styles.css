@@ -12,7 +12,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p,
+span {
   margin: 0;
 }
 ul {
@@ -20,12 +22,14 @@ ul {
 }
 
 /* header */
+header {
+  width: 1600px;
+}
 .container {
   display: flex;
   align-items: center;
-  margin-left: 0;
-  margin-right: 0;
-  width: 1230px;
+  width: 1200px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   border: 2px solid tomato;
@@ -37,13 +41,16 @@ ul {
   line-height: 1.19;
   color: var(--accent-color);
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .accent {
   color: var(--text-title-color);
 }
 .nav-links {
   display: flex;
-  padding: 0;
+  padding: 32px 0;
+  margin: 0;
 }
 .nav-links li {
   margin-right: 50px;
@@ -68,10 +75,15 @@ ul {
   color: var(--accent-color);
 }
 
+.address-box {
+  margin: 0;
+  margin-left: 331px;
+}
 .address {
   display: flex;
-  margin-left: auto;
-  padding: 0;
+  padding: 32px 0;
+  margin: 0;
+  justify-content: flex-end;
 }
 .address .item + .item {
   margin-left: 50px;
@@ -125,6 +137,11 @@ ul {
   background-color: var(--accent-color);
 }
 /* Main Sections */
+.section,
+.hero {
+  width: 1600px;
+  padding-bottom: 94px;
+}
 .section > .title {
   font-weight: 700;
   font-size: 36px;
@@ -133,6 +150,16 @@ ul {
   color: var(--text-title-color);
 }
 /* Наши преимущества index */
+.section-list {
+  display: flex;
+  padding-left: 0;
+}
+.section-list li {
+  margin-right: 30px;
+}
+.section-list li:last-child {
+  margin-right: 0;
+}
 .section-list-title {
   font-weight: 700;
   font-size: 14px;
@@ -145,6 +172,10 @@ ul {
   line-height: 1.71;
 }
 /* Our Team index*/
+.team-list {
+  display: flex;
+  padding-left: 0;
+}
 .team-list-title {
   font-weight: 500;
   font-size: 16px;
