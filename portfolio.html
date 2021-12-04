@@ -14,37 +14,47 @@
 <body>
     <!--Head-->
     <header>
-        <nav class="container"> 
-            <a href="" class="logo">Web<span class="accent">Studio</span></a>
-            <ul class="nav-links">
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
+     <div class="container">
+        <a href="" class="logo">Web<span class="accent">Studio</span></a>
+        <div class="nav-box">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Студия</a></li>
+                    <li><a href="">Портфолио</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="address-box">
             <ul class="address">
-             <li>
-                <a href="mailto:info@devstudio.com" class="address-mail">info@devstudio.com</a>
-             </li>
-             <li>
-                <a href="tel:+380961111111" class="address-phone">+38 096 111 11 11</a>
-             </li>
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="address-mail">info@devstudio.com</a>
+                </li>
+                <li class="item">
+                    <a href="tel:+380961111111" class="address-phone">+38 096 111 11 11</a>
+                </li>
             </ul>
-        </nav>
+        </div>
+     </div>
     </header>
     <main>
         <!--Main-->
         <!-- Section Filters -->
         <section class="section">
             <h1 class="title">Наши проэкты</h1>
-          <ul class="filter">
+         <div class="filter-buttons-container">
+            <ul class="filter">
               <li class="filter-item"><button type="button" class="filter-button">Все</button></li>
               <li class="filter-item"><button type="button" class="filter-button">Веб-сайты</button></li>
               <li class="filter-item"><button type="button" class="filter-button">Приложения</button></li>
               <li class="filter-item"><button type="button" class="filter-button">Дизайн</button></li>
               <li class="filter-item"><button type="button" class="filter-button">Маркетинг</button></li>
-          </ul>
+            </ul>
+         </div>
+     
         <!-- Filters Gallery -->
-                <ul class="gallery">
+     <div class="container">
+       <ul class="gallery-list">
          <li class="gallery-item">
             <img src="./images/технокряк.jpg" alt="Our People Make The Difference" width="370">
             <h2 class="gallery-title">Технокряк</h2>
@@ -90,20 +100,23 @@
           <h2 class="gallery-title">Growing Business</h3>
           <p class="gallery-text">Приложение</p>  
         </li>    
-        </ul>
+       </ul>
+     </div>   
     </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <a href="" class="logo">Web<span class="accent-footer">Studio</span></a>
-        <address>
-            <ul class="footer-address">
-                <li><a href="https://goo.gl/maps/4yWJMLV7rgnv7qpB7" class="footer-address-map"> г. Киев, пр-т Леси Украинки,
-                        26</a> </li>
-                <li><a href="mailto:info@example.com" class="footer-address-mail">info@example.com</a></li>
-                <li><a href="tel:+380991111111" class="footer-address-phone">+38 099 111 11 11</a> </li>
-            </ul>
-        </address>
+        <div class="footer-container">
+            <a href="" class="logo">Web<span class="accent-footer">Studio</span></a>
+            <address>
+                <ul class="footer-address">
+                    <li><a href="https://goo.gl/maps/4yWJMLV7rgnv7qpB7" class="footer-address-map"> г. Киев, пр-т Леси
+                            Украинки, 26</a> </li>
+                    <li><a href="mailto:info@example.com" class="footer-address-mail">info@example.com</a></li>
+                    <li><a href="tel:+380991111111" class="footer-address-phone">+38 099 111 11 11</a> </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>

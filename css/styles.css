@@ -3,6 +3,7 @@
   --secondary-text-color: #ffffff;
   --text-title-color: #212121;
   --accent-color: #2196f3;
+  --secondary-accent-color: #f5f4fa;
 }
 body {
   color: var(--primary-text-color);
@@ -32,7 +33,6 @@ header {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  border: 2px solid tomato;
 }
 .logo {
   font-family: Raleway;
@@ -54,7 +54,6 @@ header {
 }
 .nav-links li {
   margin-right: 50px;
-  outline: 1px solid red;
 }
 .nav-links li:first-child {
   margin-left: 93px;
@@ -129,8 +128,9 @@ header {
 .hero-button {
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
+  padding: 10px, 32px;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -148,11 +148,13 @@ header {
   line-height: 1.17;
   text-align: center;
   color: var(--text-title-color);
+  margin-bottom: 50px;
 }
 /* Наши преимущества index */
 .section-list {
   display: flex;
   padding-left: 0;
+  margin: 0;
 }
 .section-list li {
   margin-right: 30px;
@@ -175,6 +177,13 @@ header {
 .team-list {
   display: flex;
   padding-left: 0;
+  margin: 0;
+}
+.team-list li {
+  margin-right: 30px;
+}
+.team-list li:last-child {
+  margin-right: 0;
 }
 .team-list-title {
   font-weight: 500;
@@ -190,7 +199,14 @@ header {
 }
 /* Footer */
 .footer {
+  width: 1600px;
   background-color: #2f303a;
+}
+.footer-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .footer-address-map {
   font-size: 14px;
@@ -228,14 +244,47 @@ header {
 }
 
 /* Portfolio */
+/* Filter buttons */
+.filter-buttons-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.filter {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
 .filter-button {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--secondary-accent-color);
+  color: var(--text-title-color);
   cursor: pointer;
+  border: none;
 }
 .filter-button:hover,
 .filter-button:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+.filter-item {
+  margin-right: 8px;
+}
+.filter-item:last-child {
+  margin-right: 0;
+}
+/* Filters Gallery */
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  margin-top: -30px;
+}
+.gallery-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .gallery-title {
   font-weight: 700;
