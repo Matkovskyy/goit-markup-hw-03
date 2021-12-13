@@ -9,56 +9,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
     <!--Head-->
     <header>
-     <div class="container">
+     <div class="container header-container">
         <a href="" class="logo">Web<span class="accent">Studio</span></a>
-        <div class="nav-box">
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="./index.html">Студия</a></li>
-                    <li><a href="">Портфолио</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="address-box">
-            <ul class="address">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class="address-mail">info@devstudio.com</a>
-                </li>
-                <li class="item">
-                    <a href="tel:+380961111111" class="address-phone">+38 096 111 11 11</a>
-                </li>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Портфолио</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
             </ul>
-        </div>
-     </div>
+        </nav>
+        <ul class="address">
+            <li class="item">
+                <a href="mailto:info@devstudio.com" class="address-mail">info@devstudio.com</a>
+            </li>
+            <li class="item">
+                <a href="tel:+380961111111" class="address-phone">+38 096 111 11 11</a>
+            </li>
+        </ul>
+      </div>
     </header>
     <main>
         <!--Main-->
         <!-- Section Filters -->
         <section class="section">
-            <h1 class="title">Наши проэкты</h1>
-         <div class="filter-buttons-container">
-            <ul class="filter">
+            
+           <!-- Filters Gallery -->
+     <div class="container">
+         <h1 class="section-title-filter">Наши проэкты</h1>
+         <ul class="filter-list">
               <li class="filter-item"><button type="button" class="filter-button">Все</button></li>
               <li class="filter-item"><button type="button" class="filter-button">Веб-сайты</button></li>
               <li class="filter-item"><button type="button" class="filter-button">Приложения</button></li>
               <li class="filter-item"><button type="button" class="filter-button">Дизайн</button></li>
               <li class="filter-item"><button type="button" class="filter-button">Маркетинг</button></li>
             </ul>
-         </div>
-     
-        <!-- Filters Gallery -->
-     <div class="container">
+       
        <ul class="gallery-list">
          <li class="gallery-item">
             <img src="./images/технокряк.jpg" alt="Our People Make The Difference" width="370">
-            <h2 class="gallery-title">Технокряк</h2>
-            <p class="gallery-text">Веб-сайт</p>
+            <div class="signature">
+             <h2 class="gallery-title">Технокряк</h2>
+             <p class="gallery-text">Веб-сайт</p>
+            </div>
          </li>
         <li class="gallery-item">
            <img src="./images/basketball.jpg" alt="Basketball poster New Orlean vs Golden Star" width="370"> 
@@ -106,14 +104,16 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
+        <div class="container footer-container">
             <a href="" class="logo">Web<span class="accent-footer">Studio</span></a>
             <address>
                 <ul class="footer-address">
-                    <li><a href="https://goo.gl/maps/4yWJMLV7rgnv7qpB7" class="footer-address-map"> г. Киев, пр-т Леси
-                            Украинки, 26</a> </li>
-                    <li><a href="mailto:info@example.com" class="footer-address-mail">info@example.com</a></li>
-                    <li><a href="tel:+380991111111" class="footer-address-phone">+38 099 111 11 11</a> </li>
+                    <li class="footer-address-item"><a href="https://goo.gl/maps/4yWJMLV7rgnv7qpB7"
+                            class="footer-address-map"> г. Киев, пр-т Леси Украинки, 26</a> </li>
+                    <li class="footer-address-item"><a href="mailto:info@example.com"
+                            class="footer-address-mail">info@example.com</a></li>
+                    <li class="footer-address-item"><a href="tel:+380991111111" class="footer-address-phone">+38 099 111 11
+                            11</a> </li>
                 </ul>
             </address>
         </div>
