@@ -273,13 +273,16 @@ header {
 }
 .filter-list {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 .filter-button {
   background-color: var(--secondary-accent-color);
   color: var(--text-title-color);
   cursor: pointer;
   border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -318,7 +321,7 @@ header {
 }
 .signature {
   padding: 20px 24px;
-  border-bottom: solid black;
-  border-left: solid black;
-  border-right: solid black;
+  border-bottom: solid #eeeeee;
+  border-left: solid #eeeeee;
+  border-right: solid #eeeeee;
 }
