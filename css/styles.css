@@ -9,6 +9,7 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  width: 1600px;
 }
 h1,
 h2,
