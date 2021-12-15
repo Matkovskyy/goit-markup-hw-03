@@ -18,6 +18,7 @@ h4,
 p,
 span {
   margin: 0;
+  padding: 0;
 }
 ul {
   list-style: none;
@@ -33,6 +34,7 @@ ul {
 /* header */
 header {
   /* width: 1600px; */
+  border: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -85,6 +87,7 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 32px 0;
   text-decoration: none;
   color: var(--primary-text-color);
 }
@@ -97,6 +100,7 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 32px 0;
   text-decoration: none;
   color: var(--primary-text-color);
 }
@@ -280,6 +284,12 @@ header {
 .filter-button {
   background-color: var(--secondary-accent-color);
   color: var(--text-title-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
   cursor: pointer;
   border: none;
   border-radius: 4px;
