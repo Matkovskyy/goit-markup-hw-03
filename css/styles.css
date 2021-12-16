@@ -9,7 +9,6 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  width: 1600px;
 }
 h1,
 h2,
@@ -47,13 +46,13 @@ header {
   line-height: 1.19;
   color: var(--accent-color);
   text-decoration: none;
+  margin-right: 93px;
 }
 .accent {
   color: var(--text-title-color);
 }
 .nav {
   display: flex;
-  margin-left: 93px;
 }
 .nav-item {
   margin-right: 50px;
@@ -147,13 +146,12 @@ header {
   margin-bottom: 50px;
 }
 /* Наши преимущества index */
-.section-title-rule {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--text-title-color);
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .section-list {
   display: flex;
@@ -181,7 +179,7 @@ header {
 .work-section {
   padding-top: 0;
 }
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -195,6 +193,11 @@ header {
 }
 .team-list-item {
   margin-right: 30px;
+  background: #ffffff;
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list-item:last-child {
   margin-right: 0;
@@ -211,6 +214,9 @@ header {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+.team-names {
+  padding: 30px 0;
 }
 /* Footer */
 .footer {
@@ -257,14 +263,14 @@ header {
 .footer-address-map:active {
   color: var(--accent-color);
 }
-.footer-address {
-  margin-top: 20px;
-}
 .footer-address-item {
   margin-bottom: 9px;
 }
 .footer-address-item:last-child {
   margin-bottom: 0;
+}
+address {
+  margin-top: 20px;
 }
 /* Portfolio */
 /* Filter buttons */
@@ -274,7 +280,6 @@ header {
   line-height: 1.17;
   text-align: center;
   color: var(--text-title-color);
-  visibility: hidden;
 }
 .filter-list {
   display: flex;
@@ -332,7 +337,7 @@ header {
 }
 .signature {
   padding: 20px 24px;
-  border-bottom: solid #eeeeee;
-  border-left: solid #eeeeee;
-  border-right: solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
